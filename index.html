@@ -12,7 +12,6 @@
       background: #f0f2f5;
     }
 
-    /* TITLU */
     header {
       background: #1e88e5;
       color: white;
@@ -23,7 +22,6 @@
       letter-spacing: 2px;
     }
 
-    /* MENIU ORIZONTAL */
     nav {
       background: #1565c0;
       display: flex;
@@ -39,28 +37,30 @@
       font-size: 1.2em;
       font-weight: bold;
       transition: 0.3s;
+      padding: 10px 15px;
+      display: inline-block;
     }
 
     nav a:hover {
       color: #ffeb3b;
     }
 
-    /* DROPDOWN */
+    /* DROPDOWN STABIL */
     .dropdown {
       position: relative;
-      display: inline-block;
     }
 
     .dropdown-content {
       display: none;
       position: absolute;
       background: #1976d2;
-      min-width: 200px;
+      min-width: 220px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
       z-index: 10;
       border-radius: 5px;
-      top: 100%;   /* LIPIT de buton – nu mai dispare */
+      top: 100%;
       left: 0;
+      padding-top: 5px; /* zona tampon */
     }
 
     .dropdown-content a {
@@ -69,11 +69,50 @@
       text-decoration: none;
       display: block;
       font-size: 1em;
+      white-space: nowrap;
     }
 
     .dropdown-content a:hover {
       background: #0d47a1;
     }
 
+    /* ZONA ACTIVĂ MĂRITĂ – dropdown nu se închide */
     .dropdown:hover .dropdown-content {
-      display
+      display: block;
+    }
+
+    /* CONȚINUT */
+    .content {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>FIZICA</header>
+
+  <nav>
+    <div class="dropdown">
+      <a href="#">Clasa VI ▼</a>
+      <div class="dropdown-content">
+        <a href="clasa6/introducere.html">Introducere în fizică</a>
+      </div>
+    </div>
+
+    <a href="#">Clasa VII</a>
+    <a href="#">Clasa VIII</a>
+  </nav>
+
+  <div class="content">
+    <h2>Bine ai venit!</h2>
+    <p>Alege o clasă din meniul de sus pentru a accesa lecțiile.</p>
+  </div>
+
+</body>
+</html>
