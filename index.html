@@ -2,81 +2,77 @@
 <html lang="ro">
 <head>
   <meta charset="UTF-8">
-  <title>cursurifizicaonline</title>
+  <title>FIZICA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
       background: #f0f2f5;
-      margin: 0;
-      padding: 0;
     }
+
+    /* TITLU */
     header {
       background: #1e88e5;
       color: white;
-      padding: 30px 20px;
+      padding: 25px 10px;
       text-align: center;
+      font-size: 2.5em;
+      font-weight: bold;
+      letter-spacing: 2px;
     }
-    h1 {
-      margin: 0;
-      font-size: 2.2em;
+
+    /* MENIU ORIZONTAL */
+    nav {
+      background: #1565c0;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 15px 0;
     }
-    .container {
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+    }
+
+    /* CONȚINUT */
+    .content {
       max-width: 900px;
       margin: 40px auto;
-      padding: 0 20px;
-    }
-    .card {
       background: white;
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      margin-bottom: 25px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #555;
-      margin-top: 40px;
     }
   </style>
 </head>
+
 <body>
 
-<header>
-  <h1>cursurifizicaonline</h1>
-  <p>Resurse, proiecte și experimente digitale</p>
-</header>
+  <!-- TITLU -->
+  <header>FIZICA</header>
 
-<div class="container">
+  <!-- MENIU -->
+  <nav>
+    <a href="#">Clasa VI</a>
+    <a href="#">Clasa VII</a>
+    <a href="#">Clasa VIII</a>
+  </nav>
 
-  <div class="card">
-    <h2>Bine ai venit</h2>
-    <p>
-      Acesta este site-ul oficial <strong>cursurifizicaonline</strong>, găzduit pe GitHub Pages.
-      Aici poți publica proiecte, materiale educaționale, cod sursă sau demonstrații interactive.
-    </p>
+  <!-- CONȚINUT -->
+  <div class="content">
+    <h2>Bine ai venit!</h2>
+    <p>Aici poți adăuga lecții, experimente, fișe de lucru sau proiecte pentru clasele VI, VII și VIII.</p>
   </div>
-
-  <div class="card">
-    <h2>Proiecte</h2>
-    <ul>
-      <li>Recunoaștere biometrică cu rețele neuronale</li>
-      <li>Simulări fizice interactive</li>
-      <li>Experimente digitale pentru elevi și studenți</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Contact</h2>
-    <p>Pentru colaborări sau întrebări, adaugă aici un email sau un link către GitHub.</p>
-  </div>
-
-</div>
-
-<footer>
-  &copy; 2026 cursurifizicaonline — Toate drepturile rezervate
-</footer>
 
 </body>
 </html>
