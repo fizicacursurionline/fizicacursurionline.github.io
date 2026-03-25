@@ -59,7 +59,8 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
       z-index: 10;
       border-radius: 5px;
-      margin-top: 10px;
+      top: 100%;   /* LIPIT de buton – nu mai dispare */
+      left: 0;
     }
 
     .dropdown-content a {
@@ -75,44 +76,4 @@
     }
 
     .dropdown:hover .dropdown-content {
-      display: block;
-    }
-
-    /* CONȚINUT */
-    .content {
-      max-width: 900px;
-      margin: 40px auto;
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- TITLU -->
-  <header>FIZICA</header>
-
-  <!-- MENIU CU DROPDOWN -->
-  <nav>
-    <div class="dropdown">
-      <a href="#">Clasa VI ▼</a>
-      <div class="dropdown-content">
-        <a href="clasa6/introducere.html">Introducere în fizică</a>
-      </div>
-    </div>
-
-    <a href="#">Clasa VII</a>
-    <a href="#">Clasa VIII</a>
-  </nav>
-
-  <!-- CONȚINUT PAGINĂ PRINCIPALĂ -->
-  <div class="content">
-    <h2>Bine ai venit!</h2>
-    <p>Alege o clasă din meniul de sus pentru a accesa lecțiile.</p>
-  </div>
-
-</body>
-</html>
+      display
