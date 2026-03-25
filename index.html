@@ -30,9 +30,10 @@
       justify-content: center;
       gap: 40px;
       padding: 15px 0;
+      position: relative;
     }
 
-    nav a {
+    nav > a, nav .dropdown > a {
       color: white;
       text-decoration: none;
       font-size: 1.2em;
@@ -44,35 +45,24 @@
       color: #ffeb3b;
     }
 
-    /* CONȚINUT */
-    .content {
-      max-width: 900px;
-      margin: 40px auto;
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    /* DROPDOWN */
+    .dropdown {
+      position: relative;
+      display: inline-block;
     }
-  </style>
-</head>
 
-<body>
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background: #1976d2;
+      min-width: 200px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      z-index: 10;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
 
-  <!-- TITLU -->
-  <header>FIZICA</header>
-
-  <!-- MENIU -->
-  <nav>
-    <a href="#">Clasa VI</a>
-    <a href="#">Clasa VII</a>
-    <a href="#">Clasa VIII</a>
-  </nav>
-
-  <!-- CONȚINUT -->
-  <div class="content">
-    <h2>Bine ai venit!</h2>
-    <p>Aici poți adăuga lecții, experimente, fișe de lucru sau proiecte pentru clasele VI, VII și VIII.</p>
-  </div>
-
-</body>
-</html>
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration
